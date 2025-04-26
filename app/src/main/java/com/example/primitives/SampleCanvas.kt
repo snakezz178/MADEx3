@@ -31,5 +31,13 @@ class SampleCanvas @JvmOverloads constructor(
         val right = 600f
         val bottom = 300f
         canvas.drawRect(left, top, right, bottom, paint)
+        //Draw a  blue ellipse
+        paint.color = Color.BLUE
+        val ovalLeft = 100f
+        val ovalTop = 400f
+        val ovalRight = 500f
+        val ovalBottom = 600f
+        val oval = RectF(ovalLeft, ovalTop, ovalRight, ovalBottom)
+        canvas.drawOval(oval, paint)
     }
 }
